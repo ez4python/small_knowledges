@@ -11,7 +11,7 @@ idna==3.7
 imageio==2.34.2
 imageio-ffmpeg==0.5.1
 iniconfig==2.0.0
-instabot==0.117.0
+instaloader==4.12
 mock==5.1.0
 moviepy==1.0.3
 numpy==2.0.0
