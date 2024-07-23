@@ -1,5 +1,4 @@
 import json
-
 import instaloader
 
 
@@ -17,12 +16,18 @@ def get_user(username: str):
         'username': username,
         'full_name': user.full_name,
         'bio': user.biography,
-        'posts': [{'shortcode': post.shortcode, 'url': post.url} for post in user.get_posts()]
+        'posts': [
+            {
+                'url_on_instagram': 'https://instagram.com/p/' + post.shortcode,
+                'url': post.url
+            } for post in user.get_posts()
+        ]
     }
 
     return json.dumps(data, indent=4)
 
 
 if __name__ == '__main__':
-    username = 'akbarali_hah'
-    print(get_user(username))
+    insta_username = 'akbarali_hah'
+    get_user_info = get_user(insta_username)
+    print(get_user_info)
