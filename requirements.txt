@@ -74,11 +74,13 @@ requests==2.32.3
 requests-toolbelt==1.0.0
 responses==0.25.3
 schedule==1.2.2
+scikit-learn==1.5.2
 scipy==1.14.1
 sgmllib3k==1.0.0
 six==1.16.0
 soupsieve==2.5
 tempora==5.7.0
+threadpoolctl==3.5.0
 tomli==2.0.1
 tqdm==4.66.4
 typing_extensions==4.12.2
