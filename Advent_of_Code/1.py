@@ -19,5 +19,5 @@ if response.status_code == 200:
         col_2.append(int(nums[1]))
     col_1.sort()
     col_2.sort()
-    result = sum(abs(col_1[i] - col_2[i]) for i in range(len(col_1)))
+    result = sum(col_1[i] * col_2.count(col_1[i]) for i in range(len(col_1)))
     print(f"Result: {result}")
